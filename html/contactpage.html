@@ -1,0 +1,210 @@
+<!-- 
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen A Luy
+  ID: S3891919 
+  Acknowledgement: HTML
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" href="./img/rmit-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/rmit-favicon.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <a href="./homepage.html">
+            <img class="logo" src="../img/—Pngtree—books in the library_3760888.png" alt="wesbite_logo">
+        </a>
+        <nav class="navbar">
+            <div class="book-category">
+                <ul>
+                    <li>
+                        <a href="./homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#fiction">Fiction Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#non-fiction">Non-Fiction Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#children">Children's Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#textbook">Tetxtbooks</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+        <nav class="navbar-vertical">
+            <div class="mobile-nav-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="book-category">
+                <ul>
+                    <li>
+                        <a href="./homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#fiction">Fiction Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#non-fiction">Non-Fiction Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#children">Children's Books</a>
+                    </li>
+                    <li>
+                        <a href="./category.html#textbook">Tetxtbooks</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+
+    <section id="carousel">
+        <div class="carousel-content">
+            <h1>Shopping Here</h1>
+            <p>Welcome to the BOOKSTORE, you can enjoy the new life here!!!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="" id="item-list" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" required="">
+                </div>
+                <div>
+                    <label for="middleName">Middle Name: </label>
+                    <input type="text" id="middleName" name="middleName" required="">
+                </div>
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" name="lastname" required="">
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required="">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Enter Contact Information</legend>
+                <div>
+                    <label for="purpose">Purpose:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="">Select your purpose</option>
+                        <option value="sell">I want to sell books</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required="" placeholder="abcxyz123@gmail.com">
+                </div>
+                <div>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" placeholder="0913xxxxxx" required="">
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <option value="">Select city living</option>
+                        <option value="HCMC">Ho Chi Minh</option>
+                        <option value="Hanoi">Ha Noi</option>
+                        <option value="Danag">Da Nang</option>
+                    </select>
+                </div>
+                <div>
+                    <fieldset class="question">
+                        <legend>Contact Perference</legend>
+                        <input type="checkbox" id="by-phone" name="by-phone" value="by-phone">
+                        <label for="by-phone">By Phone</label>
+    
+                        <input type="checkbox" id="by-email" name="by-email" value="by-email">
+                        <label for="by-email">By Email</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset class="question">
+                        <legend>Receive Weekly Letter</legend>
+                        <input type="radio" id="yes" name="receive-letter" value="yes" checked>
+                        <label for="yes">Yes</label>
+    
+                        <input type="radio" id="no" name="receive-letter" value="no">
+                        <label for="no">No</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-item">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam ab in voluptatibus minus sunt
+                    beatae! Eum aut qui consequatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, reprehenderit.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100024779797519&mibextid=LQQJ4d">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100024779797519&mibextid=LQQJ4d">
+                        <i class="fa fa-twitter"></i> </a>
+                    <a href="mailto:s3891919@rmit.edu.vn">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Privacy Policy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam ab in voluptatibus minus sunt
+                    beatae! Eum aut qui consequatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, reprehenderit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, sunt.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Term Of Use</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Copyright</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse cum repellat ad!
+                    Praesentium maiores possimus, quo vitae non hic.</p>
+                <a href="./contactpage.html">
+                    <h3>Contact US</h3>
+                </a>
+                <p>If there is any information, Let us Know!!!</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2023 Lorem ipsum dolor sit amet consectetur. | Design by <span>Luy Nguyen</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
