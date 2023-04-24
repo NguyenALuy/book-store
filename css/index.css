@@ -45,20 +45,20 @@ html {
     height: 100%;
 }
 
-#header .navbar ul {
+#header .navbar ul, footer .navbar ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-#header .navbar ul li a {
+#header .navbar ul li a, footer .navbar ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-shadow: 1px 2px 1px #CCCCCC;
 }
 
-#header .navbar ul li a:hover {
+#header .navbar ul li a:hover, footer .navbar ul li a:hover {
     cursor: pointer;
     font-size: 20px;
     color: white;
@@ -194,13 +194,19 @@ h2 {
 /* FOOTER */
 footer {
     margin-top: 50px;
-    padding: 50px 0;
+    padding-bottom: 50px;
     background-color: #283618;
     color: white;
 }
 
+footer .navbar{
+    background-color:  rgba(40, 10,34, 0.793);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
 .footer-main {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     padding-bottom: 50px;
@@ -455,7 +461,7 @@ select {
         margin-left: 50%;
         margin-bottom: 20px;
     }
-    #header .navbar{
+    #header .navbar, footer .navbar{
         display: none;
     }
 
